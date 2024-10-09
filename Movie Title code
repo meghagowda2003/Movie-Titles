@@ -1,0 +1,76 @@
+import jmespath
+# List of movies
+movies = [
+    {
+        "title": "Inception",
+        "director": {
+            "first_name": "Christopher",
+            "last_name": "Nolan"
+        },
+        "year": 2010,
+        "genres": ["Action", "Sci-Fi", "Thriller"]
+    },
+    {
+        "title": "The Matrix",
+        "director": {
+            "first_name": "Lana",
+            "last_name": "Wachowski"
+        },
+        "year": 1999,
+        "genres": ["Action", "Sci-Fi"]
+    },
+    {
+        "title": "Interstellar",
+        "director": {
+            "first_name": "Christopher",
+            "last_name": "Nolan"
+        },
+        "year": 2014,
+        "genres": ["Adventure", "Drama", "Sci-Fi"]
+    },
+    {
+        "title": "The Shawshank Redemption",
+        "director": {
+            "first_name": "Frank",
+            "last_name": "Darabont"
+        },
+        "year": 1994,
+        "genres": ["Drama"]
+    },
+    {
+        "title": "The Godfather",
+        "director": {
+            "first_name": "Francis",
+            "last_name": "Coppola"
+        },
+        "year": 1972,
+        "genres": ["Crime", "Drama"]
+    },
+    {
+        "title": "Parasite",
+        "director": {
+            "first_name": "Bong",
+            "last_name": "Joon-ho"
+        },
+        "year": 2019,
+        "genres": ["Thriller", "Drama"]
+    },
+    {
+        "title": "Avatar",
+        "director": {
+            "first_name": "James",
+            "last_name": "Cameron"
+        },
+        "year": 2009,
+        "genres": ["Action", "Adventure", "Fantasy"]
+    },
+]
+# Retrieve all movie titles
+titles = [movie["title"] for movie in movies]
+
+# Print the list of movie titles
+print("List of Movie Titles:")
+print(titles)
+
+
+
